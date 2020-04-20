@@ -20,6 +20,12 @@ app.get("/app/about", (req, res) => {
     res.send("Welcome to About Page");
 });
 
+/*Blog Page*/
+app.get("/app/blog-list", (req, res) => {
+    res.send("Welcome to Blog Page");
+});
+
+
 
 /*Listening Port of the App*/
 app.listen(PORT, (req, res) => {
