@@ -1,0 +1,16 @@
+<div class="main-title">
+    <span class="mat-display-3">Check out the news</span>
+</div>
+
+<div class="cards-grid">
+    <mat-card class="card" *ngFor="let article of articles">
+        <mat-card-title>{{ article.title }}</mat-card-title>
+        <div class="card-img-bg">
+            <img mat-card-image src="{{ article.imageUrl }}" class="card-img"/>
+        </div>
+        <mat-card-content>{{ article.content }}</mat-card-content>
+        <mat-card-actions>
+            <button mat-stroked-button>Read</button>
+        </mat-card-actions>
+    </mat-card>    
+</div>
